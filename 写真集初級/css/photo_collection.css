@@ -1,10 +1,11 @@
 *{
-    font-size: 36.5%;
+    font-size: 100%;
 }
 
 body{
     background-color: #f4f9ff;
     color: #333;
+    font-size: 0.875rem;
 }
 
 img{
@@ -22,21 +23,33 @@ img{
 }
 
 .section_tiitle{
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
-header h1 img{
-    width: 28rem;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
+header{
+    margin-top: 60px;
+}
+
+header .section_tiitle{
+    width: 160px;
+    line-height: 1px;
+    margin-bottom: 15px;
+}
+
+header .site_titele a{
+    display: block;
+}
+
+.main_visual{
+    margin-bottom: 60px;
 }
 
 .index{
     background-color: #fff;
-    height: 48rem;
-    margin-top: 11rem;
+    padding: 30px 0;
+    margin-bottom: 60px;
 }
 
 .index .text{
@@ -48,6 +61,15 @@ header h1 img{
     font-size: 3rem;
 }
 
-.index .inner{
+.index .index-list li{
+    margin-left: 2rem;
     border: 1px solid tomato;
+}
+
+.index .index-list li{
+    margin-bottom: 2rem;
+}
+
+.index .index-list li:last-child{
+    margin-bottom: 0;
 }
