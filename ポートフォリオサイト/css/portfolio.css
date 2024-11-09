@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #24292e;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav_wrap {
+    max-width: 96rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 13rem;
+    /* border: 1px solid tomato; */
+}
+
+.nav_wrap ul {
+    display: flex;
+    font-size: 1.4rem;
+    /* border: 1px solid tomato; */
+}
+
+.nav_wrap li {
+    padding: 2rem;
+
+}
+
+.nav_wrap ul li:last-child {
+    width: 2rem;
+    height: 2rem;
+}
