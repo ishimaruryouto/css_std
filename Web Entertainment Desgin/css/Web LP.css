@@ -21,17 +21,18 @@ a {
 /* 共通部品 */
 .ttl {
     /* border: 1px solid tomato; */
+    margin-bottom: 90px;
     /* border-bottom: 1px solid#000; */
 
     h2 {
         font-size: 3.6rem;
-        font-weight: lighter;
+        font-weight: normal;
         letter-spacing: 10px;
     }
 
     p {
         font-size: 1.4rem;
-        font-weight: lighter;
+        font-weight: normal;
     }
 
     .ttl::after {
@@ -101,12 +102,13 @@ nav {
     width: 940px;
     margin: 0 auto;
     margin-top: 120px;
+    /* border: 1px solid tomato; */
 
 }
 
 .date_wrap {
     display: flex;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     /* border: 1px solid #000; */
 
     .date_txt {
@@ -148,20 +150,64 @@ nav {
 
 .about {
     display: flex;
-    width: 100vw;
-    border: 1px solid tomato;
-    justify-content: center;
+    /* width: 100vw; */
+    /* border: 1px solid tomato; */
+    /* justify-content: center; */
     /* gap: 70px; */
     margin-top: 120px;
 
 
-    img {
+    picture {
         width: 55%;
-        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
     }
 
     .ttl_txt {
         /* border: 1px solid skyblue; */
-        width: 55%;
+        width: 45%;
+        padding: 180px 5% 0 5%;
+    }
+
+    .txt {
+        font-size: 1.4rem;
+        line-height: 2.2;
+    }
+}
+
+.business_wrap {
+
+    .business {
+        display: flex;
+        padding: 0 10%;
+        margin: 0 auto;
+
+        .web_media {
+            width: 45%;
+
+            img {
+                width: 100%
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .promo_social {
+            width: 45%;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
     }
 }
