@@ -2,14 +2,19 @@ html {
     font-size: 62.5%;
 }
 
+.wrap {
+    border: 1px solid tomato;
+    padding-bottom: 170px;
+    background-image: url("/img/sky.png");
+    background-size: cover;
+}
+
 
 section {
     display: flex;
     position: relative;
     width: 45%;
     margin: 0 auto;
-    border: 1px solid skyblue;
-    /* align-items: top; */
     margin-top: 200px;
 
 
@@ -19,10 +24,7 @@ section {
         left: 25px;
         width: auto;
         height: 140px;
-        /* margin-left: 250px; */
-        /* border: 1px solid tomato; */
         justify-content: center;
-        z-index: 10;
 
         img {
             width: 188px;
@@ -33,8 +35,6 @@ section {
     div {
         position: relative;
         text-align: center;
-        /* border: 1px solid skyblue; */
-        z-index: 1;
 
         .ttl {
             font-family: "Itim";
