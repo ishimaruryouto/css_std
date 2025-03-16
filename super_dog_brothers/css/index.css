@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+}
+
+
+section {
+    display: flex;
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+    border: 1px solid skyblue;
+    /* align-items: top; */
+    margin-top: 200px;
+
+
+    .new {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        width: auto;
+        height: 140px;
+        /* margin-left: 250px; */
+        /* border: 1px solid tomato; */
+        justify-content: center;
+        z-index: 10;
+
+        img {
+            width: 188px;
+            height: 140px;
+        }
+    }
+
+    div {
+        position: relative;
+        text-align: center;
+        /* border: 1px solid skyblue; */
+        z-index: 1;
+
+        .ttl {
+            font-family: "Itim";
+            color: #fff;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #000;
+            font-size: 12.5rem;
+            font-weight: bold;
+            letter-spacing: -10px;
+            text-shadow: 10px 10px 0 #000;
+            line-height: 0.8;
+
+            span {
+                font-size: 14.1rem;
+            }
+        }
+
+        p {
+            font-family: "jsMath-cmbx10" serif;
+            font-size: 3.6rem;
+            font-weight: bold;
+            line-height: 4;
+        }
+    }
+}
