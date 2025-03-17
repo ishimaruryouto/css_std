@@ -3,10 +3,37 @@ html {
 }
 
 .wrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     border: 1px solid tomato;
-    padding-bottom: 170px;
-    background-image: url("/img/sky.png");
-    background-size: cover;
+    /* padding-bottom: 170px; */
+    background: linear-gradient(180deg, #7ED8FB 0%, #D5EFF5 100%);
+    /* z-index: 0; */
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 220px;
+    background-image: url("../img/cloud.png");
+    /* z-index: 1; */
+    /* border: 1px solid tomato; */
+}
+
+.right {
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    /* border: 3px solid greenyellow; */
+}
+
+.left {
+    position: absolute;
+    top: 100px;
+    left: 300px;
 }
 
 
@@ -59,4 +86,23 @@ section {
             line-height: 4;
         }
     }
+}
+
+.rock {
+    background-image: url("../img/rock.png");
+    width: 840px;
+    height: 180px;
+    background-position: top;
+    margin: 0 auto;
+    border: 1px solid tomato;
+}
+
+.ground {
+    /* position: fixed;
+    bottom: 0; */
+    background-image: url("../img/ground.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 100%;
+    height: 100px;
 }
