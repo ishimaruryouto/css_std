@@ -9,6 +9,7 @@ html {
     /* border: 1px solid tomato; */
     /* padding-bottom: 170px; */
     background: linear-gradient(180deg, #7ED8FB 0%, #D5EFF5 100%);
+    overflow: hidden;
     z-index: 1;
 
 
@@ -164,6 +165,32 @@ section {
     margin: 0 auto;
     /* border: 1px solid tomato; */
     z-index: 10;
+}
+
+.leaf_wrap {
+    .leaf_right {
+        position: absolute;
+        bottom: 12%;
+        left: 60%;
+        transform: translate(30%, -10%);
+        background-image: url("../img/leaf_right.png");
+        width: 160px;
+        height: 40px;
+        z-index: 50;
+        /* border: 1px solid tomato; */
+    }
+
+    .leaf_left {
+        position: absolute;
+        bottom: 12%;
+        left: 10%;
+        transform: translate(5%, -10%);
+        background-image: url("../img/leaf_left.png");
+        width: 250px;
+        height: 30px;
+        z-index: 50;
+        /* border: 1px solid skyblue; */
+    }
 }
 
 .ground {
