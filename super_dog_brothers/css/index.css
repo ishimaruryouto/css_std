@@ -6,10 +6,12 @@ html {
     position: relative;
     width: 100vw;
     height: 100vh;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     /* padding-bottom: 170px; */
     background: linear-gradient(180deg, #7ED8FB 0%, #D5EFF5 100%);
-    /* z-index: 0; */
+    z-index: 1;
+
+
 }
 
 .cloud {
@@ -40,15 +42,31 @@ html {
 section {
     display: flex;
     position: relative;
-    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    /* width: 45%; */
     margin: 0 auto;
-    margin-top: 200px;
+    justify-content: center;
+    /* margin-top: 200px; */
+    /* border: 1px solid tomato; */
+    z-index: 10;
+
+    /* &::before {
+        position: absolute;
+        content: '';
+        background-image: url("../img/new.png");
+        background-repeat: no-repeat;
+        width: 188px;
+        height: 140px;
+        z-index: 10;
+    } */
 
 
     .new {
         position: absolute;
         top: 0;
-        left: 25px;
+        left: 430px;
         width: auto;
         height: 140px;
         justify-content: center;
@@ -88,21 +106,73 @@ section {
     }
 }
 
+.cactus_wrap {
+    position: relative;
+    /* display: flex;
+    align-items: baseline;
+    justify-content: space-between; */
+    z-index: 5;
+
+    .cactus_left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-33%, -45%);
+        background-image: url("../img/cactus_left.png");
+        width: 304px;
+        height: 640px;
+        /* border: 1px solid tomato; */
+    }
+
+    .cactus_center {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -15%);
+        background-image: url("../img/cactus_center.png");
+        width: 304px;
+        height: 460px;
+        margin-left: 300px;
+        /* border: 1px solid tomato; */
+
+    }
+
+    .cactus_right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-45%);
+        background-image: url("../img/cactus_right.png");
+        width: 304px;
+        height: 640px;
+        /* border: 1px solid tomato; */
+
+    }
+
+}
+
+
 .rock {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("../img/rock.png");
     width: 840px;
     height: 180px;
     background-position: top;
     margin: 0 auto;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
+    z-index: 10;
 }
 
 .ground {
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
     background-image: url("../img/ground.png");
     background-repeat: repeat-x;
     background-position: bottom;
     width: 100%;
     height: 100px;
+    z-index: 100;
 }
