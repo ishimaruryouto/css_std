@@ -2,10 +2,6 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    color: #24292e;
-}
-
 li {
     list-style: none;
 }
@@ -14,81 +10,84 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
+h1 a {
+    display: block;
 }
 
 h2 {
     font-size: 2.4rem;
     text-align: center;
-    margin: 7rem 0 6.5rem;
+    margin-bottom: 65px;
 }
 
-.nav_wrap {
-    max-width: 96rem;
-    height: 27rem;
+/* img {
+    max-width: 100%;
+} */
+
+header {
+    max-width: 960px;
+    height: 270px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     padding: 0 4%;
     /* border: 1px solid tomato; */
 }
 
-.nav_wrap ul {
-    display: flex;
-    font-size: 1.4rem;
-    padding: 1rem 0;
-    /* border: 1px solid tomato; */
+
+nav {
+    width: 330px;
+
+    /* display: flex; */
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        li {
+            font-size: 1.5rem;
+            margin-left: 30px;
+
+            /* align-items: center; */
+            a {
+                color: #24292E;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
 }
 
-.nav_wrap li {
-    margin-left: 3rem;
-    color: #24292e;
+.main_visual {
+    margin-bottom: 80px;
+
+    img {
+        width: 100%;
+        max-width: 1920px;
+        height: 420px;
+        object-fit: cover;
+    }
 }
 
-.nav_wrap ul li a {
-    color: #24292e;
-}
-
-.nav_wrap ul li:last-child {
-    width: 2rem;
-    height: 2rem;
-}
-
-.main_wrap {
-    margin: 0 auto 130 auto;
-    border: 1px solid tomato;
-}
-
-.main_wrap img {
-    height: 42rem;
-    object-fit: cover;
-}
-
-.main_wrap li {
-    font-size: 1.4rem;
-}
-
-.main_wrap p {
-    font-size: 1.4rem;
-    text-align: justify;
-}
-
-.about{
-    width: 55%;
+.about {
+    width: 60%;
+    font-size: 1.5rem;
     margin: 0 auto;
-}
+    /* border: 1px solid tomato; */
 
-.about li:first-child{
-    margin-bottom: 20px;
-}
+    ul {
+        margin-bottom: 30px;
 
-.about li:last-child{
-    margin-bottom: 20px;
-}
+        li:first-child {
+            margin-bottom: 30px;
+        }
+    }
 
-.works li img{
-    width: 266px;
-    height: 173px;
+    p {
+        text-align: justify;
+    }
 }
