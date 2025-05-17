@@ -108,3 +108,24 @@ nav {
         }
     }
 }
+
+.News{
+    .flex{
+        display: flex;
+        width: 55%;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        padding: 15px;
+        margin: 0 auto;
+        border-bottom: 1px solid #c8c8c8;
+        dt{
+            width: 20%;
+        }
+        dd{
+            width: 80%;
+        }
+    }
+    .flex:first-child{
+        border-top: 1px solid #c8c8c8;
+    }
+}
