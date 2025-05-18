@@ -65,7 +65,6 @@ nav {
 
 .main_visual {
     margin-bottom: 80px;
-
     img {
         width: 100%;
         max-width: 1920px;
@@ -79,7 +78,7 @@ nav {
     font-size: 1.5rem;
     margin: 0 auto;
     margin-bottom: 65px;
-    /* border: 1px solid tomato; */
+
     h2{
         margin-top: 80px;
     }
@@ -100,30 +99,35 @@ nav {
 .works{
     width: 60%;
     margin: 0 auto;
+
     h2{
         margin-top: 135px;
     }
-    ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3列 */
-        gap: 20px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 32%;
+            margin-bottom: 23px;
+        }
+
+        li img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
-    li img{
-        width: 31%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-    }
+}
 
 
 .news{
     h2{
         margin-top: 150px;
     }
+
     .flex{
         display: flex;
         width: 60%;
@@ -132,13 +136,16 @@ nav {
         padding: 15px;
         margin: 0 auto;
         border-bottom: 1px solid #c8c8c8;
+
         dt{
             width: 20%;
         }
+
         dd{
             width: 80%;
         }
     }
+
     .flex:first-child{
         border-top: 1px solid #c8c8c8;
     }
@@ -148,6 +155,7 @@ nav {
     h2{
         margin-top: 130px;
     }
+
     .flex{
         display: flex;
         width: 60%;
@@ -155,21 +163,26 @@ nav {
         font-weight: lighter;
         padding-top: 10px;
         margin: 0 auto;
+
         dt{
             width: 15%;
         }
+
         dd{
             width: 85%;
             border:  1px solid #c8c8c8;
         }
+
         dd input{
             height: 40px;
         }
+
         dd textarea{
             width: 100%;
             height: 100px;
         }
     }
+
     .button{
         display: flex;
         align-items: center;
@@ -184,6 +197,7 @@ nav {
         border: 1px solid #24292E;
         margin-top: 30px;
         margin-bottom: 130px;
+
         &:hover{
             color: #24292E;
             background: #fff;
