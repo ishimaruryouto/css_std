@@ -17,6 +17,7 @@ h1 a {
 h2 {
     font-size: 2.4rem;
     text-align: center;
+    /* margin-top: 100px; */
     margin-bottom: 65px;
 }
 
@@ -79,6 +80,9 @@ nav {
     margin: 0 auto;
     margin-bottom: 65px;
     /* border: 1px solid tomato; */
+    h2{
+        margin-top: 80px;
+    }
 
     ul {
         margin-bottom: 30px;
@@ -94,25 +98,35 @@ nav {
 }
 
 .works{
-    width: 100%;
-    ul{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        li{
-            width: 30%;
-            margin-bottom: 23px;
-            img{
-
-            }
-        }
+    width: 60%;
+    margin: 0 auto;
+    h2{
+        margin-top: 135px;
     }
-}
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3列 */
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li img{
+        width: 31%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+    }
 
-.News{
+
+.news{
+    h2{
+        margin-top: 150px;
+    }
     .flex{
         display: flex;
-        width: 55%;
+        width: 60%;
         font-size: 1.5rem;
         font-weight: lighter;
         padding: 15px;
@@ -127,5 +141,63 @@ nav {
     }
     .flex:first-child{
         border-top: 1px solid #c8c8c8;
+    }
+}
+
+.contact{
+    h2{
+        margin-top: 130px;
+    }
+    .flex{
+        display: flex;
+        width: 60%;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        padding-top: 10px;
+        margin: 0 auto;
+        dt{
+            width: 15%;
+        }
+        dd{
+            width: 85%;
+            border:  1px solid #c8c8c8;
+        }
+        dd input{
+            height: 40px;
+        }
+        dd textarea{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 52px;
+        font-size: 1.5rem;
+        line-height: 52px;
+        color: #fff;
+        background: #24292e;
+        margin: 0 auto;
+        border: 1px solid #24292E;
+        margin-top: 30px;
+        margin-bottom: 130px;
+        &:hover{
+            color: #24292E;
+            background: #fff;
+            border: 1px solid #24292E;
+        }
+    }
+}
+
+footer{
+    p{
+        font-size: 0.8rem;
+        color: #fff;
+        background: #24292E;
+        text-align: center;
+        padding: 10px;
     }
 }
