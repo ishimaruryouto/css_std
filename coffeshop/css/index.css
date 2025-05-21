@@ -19,13 +19,12 @@ h1{
     margin: 150px auto;
 }
 
-h3{
-    width: 180px;
-    color: #000;
-    font-size: 4rem;
-    border-bottom: 6px solid #e03131;
+.wrapper{
+    max-width: 1000px;
+    padding: 90px 16px 150px 16px;
     margin: 0 auto;
-    }
+    /* text-align: center; */
+}
 
 
 .fixed_bg{
@@ -79,20 +78,31 @@ nav{
 }
 
 .menu_content{
-    width: 45vw;
+    width: 70vw;
     display: flex;
+    flex-wrap: nowrap;
     margin: 0 auto;
-    margin-top: 105px;
     border:  1px solid tomato;
+    /* border:  1px solid tomato; */
 }
 
 
-.coffee_item{
+.menu_item{
     width: 50%;
-    border:  1px solid skyblue;
+    border-left: 1px solid #000;
+    padding-top: 110px;
+
+    h3{
+    width: 180px;
+    color: #000;
+    font-size: 4rem;
+    border-bottom: 6px solid #e03131;
+    margin: 0 auto;
+    margin-bottom: 67px;
+    }
+
     dl{
-        margin-top: 65px;
-        margin-bottom: 30px;
+        padding: 0 45px;
         .price{
             display: flex;
             align-items: bottom;
@@ -110,3 +120,11 @@ nav{
     }
 }
 
+.menu_item:first-child{
+    border-left: none;
+}
+
+.menu_item:nth-of-type(2),
+.menu_item:nth-of-type(3){
+    width: 50%;
+}
