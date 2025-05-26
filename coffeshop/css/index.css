@@ -29,6 +29,15 @@ h2 {
     filter: drop-shadow(1px 1px 16px #c8c8c8);
 }
 
+h3 {
+    width: 180px;
+    color: #000;
+    font-size: 4rem;
+    border-bottom: 6px solid #e03131;
+    margin: 0 auto;
+    margin-bottom: 67px;
+}
+
 .wrapper {
     max-width: 1000px;
     padding: 90px 16px 150px 16px;
@@ -93,14 +102,14 @@ nav {
     border-left: 1px solid #000;
     padding-top: 110px;
 
-    h3 {
+    /* h3 {
         width: 180px;
         color: #000;
         font-size: 4rem;
         border-bottom: 6px solid #e03131;
         margin: 0 auto;
         margin-bottom: 67px;
-    }
+    } */
 }
 
 dl {
@@ -139,4 +148,9 @@ dd {
 .about_img {
     background-image: url("../img/about.jpg");
     position: relative;
+}
+
+.about_wrap {
+    width: 100%;
+    margin-top: 20px;
 }

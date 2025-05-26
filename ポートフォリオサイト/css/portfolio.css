@@ -57,6 +57,7 @@ nav {
 
 .main_visual {
     margin-bottom: 80px;
+
     img {
         width: 100%;
         max-width: 1920px;
@@ -71,7 +72,7 @@ nav {
     margin: 0 auto;
     margin-bottom: 65px;
 
-    h2{
+    h2 {
         margin-top: 80px;
     }
 
@@ -88,11 +89,11 @@ nav {
     }
 }
 
-.works{
+.works {
     width: 60%;
     margin: 0 auto;
 
-    h2{
+    h2 {
         margin-top: 135px;
     }
 
@@ -115,12 +116,12 @@ nav {
 }
 
 
-.news{
-    h2{
+.news {
+    h2 {
         margin-top: 150px;
     }
 
-    .flex{
+    .flex {
         display: flex;
         width: 60%;
         font-size: 1.5rem;
@@ -129,26 +130,26 @@ nav {
         margin: 0 auto;
         border-bottom: 1px solid #c8c8c8;
 
-        dt{
+        dt {
             width: 20%;
         }
 
-        dd{
+        dd {
             width: 80%;
         }
     }
 
-    .flex:first-child{
+    .flex:first-child {
         border-top: 1px solid #c8c8c8;
     }
 }
 
-.contact{
-    h2{
+.contact {
+    h2 {
         margin-top: 130px;
     }
 
-    .flex{
+    .flex {
         display: flex;
         width: 60%;
         font-size: 1.5rem;
@@ -156,26 +157,26 @@ nav {
         padding-top: 10px;
         margin: 0 auto;
 
-        dt{
+        dt {
             width: 15%;
         }
 
-        dd{
+        dd {
             width: 85%;
-            border:  1px solid #c8c8c8;
+            border: 1px solid #c8c8c8;
         }
 
-        dd input{
+        dd input {
             height: 40px;
         }
 
-        dd textarea{
+        dd textarea {
             width: 100%;
             height: 100px;
         }
     }
 
-    .button{
+    .button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -190,7 +191,7 @@ nav {
         margin-top: 30px;
         margin-bottom: 130px;
 
-        &:hover{
+        &:hover {
             color: #24292E;
             background: #fff;
             border: 1px solid #24292E;
@@ -198,8 +199,8 @@ nav {
     }
 }
 
-footer{
-    p{
+footer {
+    p {
         font-size: 0.8rem;
         color: #fff;
         background: #24292E;
