@@ -61,7 +61,7 @@ nav {
     img {
         width: 100%;
         max-width: 1920px;
-        height: 420px;
+        height: auto;
         object-fit: cover;
     }
 }
@@ -206,5 +206,76 @@ footer {
         background: #24292E;
         text-align: center;
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 4%;
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+
+            li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .main_visual {
+        img {
+            height: auto;
+        }
+    }
+
+    .about,
+    .works,
+    .news .flex,
+    .contact .flex {
+        width: 90%;
+    }
+
+    .works {
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    .news {
+        .flex {
+            flex-direction: column;
+
+            dt,
+            dd {
+                width: 100%;
+            }
+        }
+    }
+
+    .contact {
+        .flex {
+            flex-direction: column;
+
+            dt,
+            dd {
+                width: 100%;
+            }
+        }
+
+        .button {
+            width: 90%;
+        }
     }
 }
