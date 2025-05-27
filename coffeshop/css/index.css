@@ -205,5 +205,28 @@ dd {
             transition: all 0.3s ease;
             background: #e03131;
         }
+
+        a::before,
+        a span::before {
+            width: 2px;
+            height: 50%;
+            /* border: 1px solid tomato; */
+        }
+
+        a::after,
+        a span::after {
+            width: 20%;
+            height: 2px;
+        }
+
+        a:hover::before,
+        a span:hover::before {
+            height: 100%;
+        }
+
+        a:hover::after,
+        a span:hover::after {
+            width: 100%;
+        }
     }
 }
