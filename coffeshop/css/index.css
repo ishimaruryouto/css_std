@@ -69,8 +69,15 @@ nav {
             padding-right: 42px;
 
             a {
+                color: #fff;
+                transition: all 0.3s ease;
+                filter: drop-shadow(1px 1px 2px #121212);
                 display: block;
                 text-align: right;
+            }
+
+            a:hover {
+                color: #e03131;
             }
         }
     }
@@ -174,40 +181,62 @@ nav {
                 height: 100%;
             }
         }
-
-        a::before,
-        a::after {
-            position: absolute;
-            content: "";
-            right: 0;
-            bottom: 0;
-            transition: all 0.3s ease;
-            background: #e03131;
-        }
-
-        a::before,
-        a span::before {
-            width: 2px;
-            height: 50%;
-        }
-
-        a::after,
-        a span::after {
-            width: 20%;
-            height: 2px;
-        }
-
-        a:hover::before,
-        a span:hover::before {
-            height: 100%;
-        }
-
-        a:hover::after,
-        a span:hover::after {
-            width: 100%;
-        }
     }
 }
+
+.about_item {
+
+    button a::before,
+    button a::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: #e03131;
+        transition: all 0.3s ease;
+    }
+
+    a::before,
+    a::after,
+    a span::before,
+    a span::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: #e03131;
+        transition: all 0.3s ease;
+    }
+
+    a::before,
+    a span::before {
+        width: 2px;
+        height: 50%;
+    }
+
+    a::after,
+    a span::after {
+        width: 20%;
+        height: 2px;
+    }
+
+    a:hover::before,
+    a span:hover::before {
+        height: 100%;
+    }
+
+    a:hover::after,
+    a span:hover::after {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
 
 .location_wrap {
     width: 100%;
