@@ -106,7 +106,8 @@ header {
 }
 
 .bicycle {
-    // text-align: center;
+    margin: 0 auto;
+    text-align: center;
 
     h2 {
         @include h2-text;
@@ -114,8 +115,10 @@ header {
 
     .picure_wrap {
         display: flex;
+        width: 55%;
         justify-content: space-between;
-        border: 1px solid tomato;
+        margin: 0 auto;
+        // border: 1px solid tomato;
 
         .picture {
             width: 32%;
@@ -133,7 +136,14 @@ header {
         .p {
             @include p-text;
         }
-
     }
+}
 
+footer {
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 115px;
+        margin-bottom: 10px;
+    }
 }

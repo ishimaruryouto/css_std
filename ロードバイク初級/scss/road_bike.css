@@ -77,6 +77,10 @@ header nav ul li a {
   font-size: 1.4rem;
 }
 
+.bicycle {
+  margin: 0 auto;
+  text-align: center;
+}
 .bicycle h2 {
   display: inline-block;
   color: #383E45;
@@ -87,8 +91,9 @@ header nav ul li a {
 }
 .bicycle .picure_wrap {
   display: flex;
+  width: 55%;
   justify-content: space-between;
-  border: 1px solid tomato;
+  margin: 0 auto;
 }
 .bicycle .picure_wrap .picture {
   width: 32%;
@@ -106,4 +111,11 @@ header nav ul li a {
 .bicycle .picure_wrap .p {
   color: #383E45;
   font-size: 1.4rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 115px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=road_bike.css.map */
