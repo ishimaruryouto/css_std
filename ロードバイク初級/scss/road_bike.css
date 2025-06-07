@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  min-width: 600px;
+}
+
 li {
   list-style: none;
 }
@@ -56,6 +60,7 @@ header nav ul li a {
 .about .item_wrap {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .about .item_wrap picture img {
@@ -70,7 +75,8 @@ header nav ul li a {
   color: #383E45;
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .about .item_wrap .item_info p {
   color: #383E45;
@@ -91,7 +97,7 @@ header nav ul li a {
 }
 .bicycle .picure_wrap {
   display: flex;
-  width: 55%;
+  width: 58%;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -102,13 +108,14 @@ header nav ul li a {
 .bicycle .picure_wrap .picture img {
   width: 100%;
 }
-.bicycle .picure_wrap .h3 {
+.bicycle .picure_wrap h3 {
   color: #383E45;
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
-.bicycle .picure_wrap .p {
+.bicycle .picure_wrap p {
   color: #383E45;
   font-size: 1.4rem;
 }
@@ -118,4 +125,58 @@ footer p {
   text-align: center;
   margin-top: 115px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    min-width: auto;
+  }
+  header {
+    flex-direction: column;
+    width: 90%;
+    align-items: flex-start;
+  }
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  header nav ul li {
+    padding: 10px 0;
+  }
+  .main_visual img {
+    height: 300px;
+  }
+  .about {
+    width: 90%;
+  }
+  .about .item_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .item_wrap picture img {
+    width: 80px;
+    height: 80px;
+  }
+  .about .item_wrap .item_info {
+    text-align: center;
+  }
+  .about .item_wrap .item_info h3 {
+    margin-top: 10px;
+  }
+  .bicycle .picure_wrap {
+    flex-direction: column;
+    width: 90%;
+  }
+  .bicycle .picure_wrap .picture {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer p {
+    font-size: 1rem;
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=road_bike.css.map */

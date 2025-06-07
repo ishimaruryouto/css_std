@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    min-width: 600px;
+}
+
 
 li {
     list-style: none;
@@ -29,7 +33,8 @@ a {
     color: #383E45;
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 header {
@@ -83,6 +88,7 @@ header {
     .item_wrap {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 30px;
 
         picture img {
@@ -115,10 +121,9 @@ header {
 
     .picure_wrap {
         display: flex;
-        width: 55%;
+        width: 58%;
         justify-content: space-between;
         margin: 0 auto;
-        // border: 1px solid tomato;
 
         .picture {
             width: 32%;
@@ -129,11 +134,11 @@ header {
             }
         }
 
-        .h3 {
+        h3 {
             @include h3-text;
         }
 
-        .p {
+        p {
             @include p-text;
         }
     }
@@ -145,5 +150,80 @@ footer {
         text-align: center;
         margin-top: 115px;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        min-width: auto;
+    }
+
+    header {
+        flex-direction: column;
+        width: 90%;
+        align-items: flex-start;
+
+        nav {
+            ul {
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+
+                li {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+    .main_visual {
+        img {
+            height: 300px;
+        }
+    }
+
+    .about {
+        width: 90%;
+
+        .item_wrap {
+            flex-direction: column;
+            align-items: center;
+
+            picture img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .item_info {
+                text-align: center;
+
+                h3 {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .bicycle {
+        .picure_wrap {
+            flex-direction: column;
+            width: 90%;
+
+            .picture {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    footer {
+        p {
+            font-size: 1rem;
+            margin-top: 60px;
+        }
     }
 }
