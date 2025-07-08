@@ -1,5 +1,202 @@
-body {
-  background: skyblue;
+@import "../node_modules/ress/ress.css";
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100vw;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-image: url("../img/mainvisual.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header h1 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.ttl_txt {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.ttl_txt h2 {
+  color: #24292E;
+  font-size: 2.4rem;
+  margin-top: 80px;
+}
+.ttl_txt p {
+  color: #24292E;
+  font-size: 1.4rem;
+}
+
+.content_wrap {
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.content_wrap .content_item {
+  position: relative;
+  display: block;
+  width: 49%;
+  height: auto;
+  gap: 2%;
+}
+.content_wrap .content_item img {
+  object-fit: cover;
+  width: 100%;
+  height: 510px;
+}
+.content_wrap .content_item .txt_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 290px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+}
+.content_wrap .content_item .txt_wrap h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.content_wrap .content_item .txt_wrap p {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.fashion_style_wrap {
+  width: 100%;
+  height: 520px;
+  background-image: url("../img/fashion.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.fashion_style_wrap .txt_wrap {
+  width: 35%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.fashion_style_wrap .txt_wrap h2 {
+  color: #24292E;
+  font-size: 2.4rem;
+  padding-top: 60px;
+}
+.fashion_style_wrap .txt_wrap p {
+  color: #24292E;
+  font-size: 1.4rem;
+  margin-top: 25px;
+}
+.fashion_style_wrap .txt_wrap button {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border: 1px solid #2a2a2a;
+  padding: 14px 36px;
+  margin-top: 30px;
+}
+.fashion_style_wrap .txt_wrap button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog_anique_wrap {
+  background: #F5F5F5;
+  padding: 40px 0;
+}
+.catalog_anique_wrap .item_wrap {
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+.catalog_anique_wrap .item_wrap:last-child {
+  flex-direction: row-reverse;
+  margin-top: 120px;
+}
+.catalog_anique_wrap .item_wrap .pic img {
+  height: auto;
+}
+.catalog_anique_wrap .item_wrap .info {
+  height: auto;
+}
+.catalog_anique_wrap .item_wrap .info h2 {
+  color: #24292E;
+  font-size: 2.4rem;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.catalog_anique_wrap .item_wrap .info p {
+  color: #24292E;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.catalog_anique_wrap .item_wrap .info button {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border: 1px solid #2a2a2a;
+  padding: 14px 36px;
+  margin-top: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.catalog_anique_wrap .item_wrap .info button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer .footer_wrap {
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+}
+footer .footer_wrap .item {
+  width: 33%;
+  padding: 100px 0;
+  line-height: 2;
+}
+footer .footer_wrap .item h2 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+footer .footer_wrap .item li {
+  color: #fff;
+  font-size: 1.2rem;
+}
+footer .footer_wrap .item p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: left;
+}
+footer p {
+  color: #24292E;
+  font-size: 1.2rem;
+  margin: 30px 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
