@@ -22,9 +22,11 @@ img {
     padding: 0 15%;
 }
 
-@mixin sub_ttl {
+@mixin sub_ttl($margin-top: 0, $padding-top: 0) {
     color: #24292E;
     font-size: 2.4rem;
+    margin-top: $margin-top;
+    padding-top: $padding-top;
 }
 
 @mixin main_txt($color: #24292E) {
