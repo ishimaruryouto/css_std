@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: #fff;
+    font: italic bold 5rem /1.5 serif;
+}
+
+.bg {
+    background: url("../img/minjyu.webp") no-repeat center/cover;
+}
+
+.margin {
+    margin: 20px 40px 60px 80px;
+}
+
+.animation {
+    animation-name: blink-text 2s ease 1s infinite alternate both;
+}
+
+.border {
+    border: 2px solid #052a4e;
+}
+
+ul {
+    .list {
+        color: #fff;
+        list-style: square inside url("../img/boiled-egg.png");
+    }
+}
