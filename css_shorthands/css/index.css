@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: #fff;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.animation {
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.bg {
+    background-color: #f1f7fe;
+    background-image: url("../img/minjyu.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.margin {
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-left: 80px;
+}
+
+.animation {
+    animation-name: blink-text;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+.border {
+    border-top-width: 20px;
+    border-style: solid;
+    border-color: #052a4e;
+}
+
+ul {
+    .list {
+        color: #fff;
+        list-style-type: square;
+        list-style-position: inside;
+        list-style-image: url("../img/boiled-egg.png");
+    }
+}
