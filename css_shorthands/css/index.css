@@ -12,14 +12,19 @@ h1 {
     font-family: serif;
     font-weight: bold;
     font-size: 5rem;
+    font-style: italic;
     line-height: 1.5;
 }
 
-.animation {
+.transition {
     transition-property: color;
     transition-duration: 2s;
     transition-timing-function: ease;
     transition-delay: 1s;
+}
+
+.transition:hover {
+    color: skyblue;
 }
 
 .bg {
@@ -47,17 +52,25 @@ h1 {
     animation-fill-mode: both;
 }
 
-.border {
-    border-top-width: 20px;
-    border-style: solid;
-    border-color: #052a4e;
+@keyframes blink-text {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-ul {
-    .list {
-        color: #fff;
-        list-style-type: square;
-        list-style-position: inside;
-        list-style-image: url("../img/boiled-egg.png");
-    }
+.border {
+    border-style: solid;
+    border-color: #052a4e;
+    border-top-width: 20px;
+}
+
+.list {
+    color: #fff;
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url("../img/boiled-egg.png");
 }

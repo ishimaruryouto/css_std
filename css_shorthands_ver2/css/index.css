@@ -9,7 +9,15 @@ html {
 
 h1 {
     color: #fff;
-    font: italic bold 5rem /1.5 serif;
+    font: italic bold 5rem/1.5 serif;
+}
+
+.transition {
+    transition: color 2s ease 1s;
+}
+
+.transition:hover {
+    color: skyblue;
 }
 
 .bg {
@@ -21,16 +29,24 @@ h1 {
 }
 
 .animation {
-    animation-name: blink-text 2s ease 1s infinite alternate both;
+    animation: blink-text 2s ease 1s infinite alternate both;
+}
+
+@keyframes blink-text {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .border {
-    border: 2px solid #052a4e;
+    border-top: 20px solid #052a4e;
 }
 
-ul {
-    .list {
-        color: #fff;
-        list-style: square inside url("../img/boiled-egg.png");
-    }
+.list {
+    color: #fff;
+    list-style: square inside url("../img/boiled-egg.png");
 }
